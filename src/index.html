@@ -19,76 +19,90 @@
     >
       <fieldset class="form">
         <legend>Personal information</legend>
-        <label class="form_field" for="surname">
-          Surname:
-          <input
-            id="surname"
-            name="surname"
-            type="text"
-            autocomplete="off"
-          >
-        </label>
-        <label class="form_field" for="name">
-          Name:
-          <input
-            id="name"
-            name="name"
-            type="text"
-            autocomplete="off"
-          >
-        </label>
-        <label class="form_field" for="age">
-          How old are You?
-          <input
-            id="age"
-            name="age"
-            type="number"
-            min="12"
-            max="100"
-            value="12"
-          >
-        </label>
-        <label class="form_field" for="dateBirth">
-          Full date of birth:
-          <input
-            id="dateBirth"
-            name="date"
-            type="date"
-          >
-        </label>
-        <label class="form_field" for="terms">
-          <label for="terms">I accept the term of the agreement</label>
-          <input
-            id="terms"
-            name="terms"
-            type="checkbox"
-            required
-          >
-        </label>
+        <div class="form_field">
+          <label for="surname">
+            Surname:
+            <input
+              id="surname"
+              name="surname"
+              type="text"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="name">
+            Name:
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="age">
+            How old are You?
+            <input
+              id="age"
+              name="age"
+              type="number"
+              min="12"
+              max="100"
+              value="12"
+            >
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="dateBirth">
+            Full date of birth:
+            <input
+              id="dateBirth"
+              name="date"
+              type="date"
+            >
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="terms">
+            <label for="terms">I accept the term of the agreement</label>
+            <input
+              id="terms"
+              name="terms"
+              type="checkbox"
+              required
+            >
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form">
         <legend>Registration</legend>
-        <label class="form_field" for="email">
-          E-mail:
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="email@example.com"
-            required
-          >
-        </label>
-        <label class="form_field" for="password">
-          Password:
-          <input
-            id="password"
-            name="password"
-            type="password"
-            minlength="5"
-            maxlength="16"
-            required
-          >
-        </label>
+        <div class="form_field">
+          <label for="email">
+            E-mail:
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="email@example.com"
+              required
+            >
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="password">
+            Password:
+            <input
+              id="password"
+              name="password"
+              type="password"
+              minlength="5"
+              maxlength="16"
+              required
+            >
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form">
         <legend>An interesting fact about you!</legend>
@@ -113,66 +127,78 @@
             No
           </label>
         </div>
-        <label class="form_field" for="color">
-          What is your favorite color?
-          <input
-            id="color"
-            name="color"
-            type="color"
-          >
-        </label>
-        <label class="form_field" for="time">
-          What time do you go to bed?
-          <input
-            id="time"
-            name="time"
-            type="time"
-            step="2"
-          >
-        </label>
-        <label class="form_field" for="cars">
-          What are your favorite brand of cars?
-          <select
-            id="cars"
-            for="cars"
-            multiple
-            required
-          >
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
-            <option
-              value=""
-              disabled
+        <div class="form_field">
+          <label for="color">
+            What is your favorite color?
+            <input
+              id="color"
+              name="color"
+              type="color"
             >
-            </option>
-          </select>
-        </label>
-        <label class="form_field" for="rate">
-          How do you rate our work??
-          <input
-            id="rate"
-            name="rate"
-            type="range"
-            min="0"
-            max="100"
-            value="1"
-          >
-        </label>
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="time">
+            What time do you go to bed?
+            <input
+              id="time"
+              name="time"
+              type="time"
+              step="2"
+            >
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="cars">
+            What are your favorite brand of cars?
+            <select
+              id="cars"
+              for="cars"
+              multiple
+              required
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+              <option
+                value=""
+                disabled
+              >
+              </option>
+            </select>
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="rate">
+            How do you rate our work??
+            <input
+              id="rate"
+              name="rate"
+              type="range"
+              min="0"
+              max="100"
+              value="1"
+            >
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form">
         <legend>Additional info:</legend>
-        <label class="form_field" for="comments">
-          Comments:
-          <textarea id="comments"></textarea>
-        </label>
-        <label class="form_field" for="recommend">
-          Would you recommend us?
-          <select id="recommend" name="recommend">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-          </select>
-        </label>
+        <div class="form_field">
+          <label for="comments">
+            Comments:
+            <textarea id="comments"></textarea>
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="recommend">
+            Would you recommend us?
+            <select id="recommend" name="recommend">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
       </fieldset>
       <button type="submit">Submit</button>
     </form>

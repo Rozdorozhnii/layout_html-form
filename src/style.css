@@ -4,10 +4,9 @@
 }
 
 .form_field {
-  display: block;
   margin-bottom: 10px;
 }
 
-label.form_field:last-of-type {
+.form_field:last-of-type {
   margin-bottom: 0;
 }
