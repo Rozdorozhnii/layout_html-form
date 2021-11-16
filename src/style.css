@@ -8,6 +8,6 @@
   margin-bottom: 10px;
 }
 
-.form_field:last-of-type {
+label.form_field:last-of-type {
   margin-bottom: 0;
 }
